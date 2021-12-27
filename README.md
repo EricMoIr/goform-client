@@ -8,7 +8,7 @@ This project is a dynamic questionnaire written in ReactJS as part of the home a
 2. Clone this project
 
 ```sh
-git clone <replace_this>
+git@github.com:EricMoIr/goform-client.git
 ```
 
 3. Position yourself inside the folder of this project
@@ -35,7 +35,7 @@ yarn start
 yarn mock
 ```
 
-Alternatively, run this application alongside its server-side project: [GoForm-Server](replace_this)
+Alternatively, run this application alongside its server-side project: [GoForm-Server](https://github.com/EricMoIr/goform-server)
 
 ## Notable libraries used
 

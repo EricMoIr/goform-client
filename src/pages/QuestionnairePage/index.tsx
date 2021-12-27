@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { Form, Button, message } from "antd";
+import { Form, Button, message, Skeleton, Result } from "antd";
 import { useParams } from "react-router-dom";
 
 import { Question as QuestionType } from "../../models";
 import useQuestionnaire from "../../hooks/useQuestionnaire";
 import Question from "./Question";
+import EmptyResults from "./EmptyResults";
 import FormViewer from "../../components/FormViewer";
 
 function QuestionnairePage() {
@@ -39,10 +40,16 @@ function QuestionnairePage() {
   }, [data]);
 
   if (error) {
-    return <div className="page">Couldn't render questionnaire</div>;
+    return <EmptyResults />;
   }
   if (loading) {
-    return <div className="page">Loading...</div>;
+    return (
+      <div className="page">
+        <FormViewer>
+          <Skeleton />
+        </FormViewer>
+      </div>
+    );
   }
 
   function handleFinish() {
@@ -78,7 +85,7 @@ function QuestionnairePage() {
       </div>
     );
   }
-  return <div>No data was found :(</div>;
+  return <EmptyResults />;
 }
 
 export default QuestionnairePage;
