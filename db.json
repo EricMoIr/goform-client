@@ -20,11 +20,6 @@
         {
           "id": "2",
           "title": "Why do you like TypeScript?",
-          "choices": [
-            "Javascript",
-            "TypeScript",
-            "CoffeeScript"
-          ],
           "condition": {
             "questionId": "1",
             "operator": "=",
