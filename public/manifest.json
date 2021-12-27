@@ -1,0 +1,8 @@
+{
+  "short_name": "GoForm",
+  "name": "GoForm app created for a GoTech interview",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

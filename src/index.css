@@ -1,0 +1,97 @@
+/* Antd overrides */
+.ant-space {
+  width: 100%;
+}
+.ant-space-item {
+  width: 100%;
+}
+
+.ant-radio-group {
+  width: 100%;
+}
+
+/* Application styles */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  background-color: #feeaf8;
+  min-height: 100vh;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 15px;
+}
+
+.form-viewer {
+  background-color: white;
+  margin-bottom: 15px;
+  min-width: 50vw;
+  max-width: 80vw;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 24px;
+}
+
+.form-viewer-important {
+  background-color: #01bcd4;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 10px;
+  left: -24px;
+  top: -24px;
+  width: calc(100% + 48px);
+  position: relative;
+}
+
+.multiple-question-other-radio {
+  width: 100%;
+}
+
+.multiple-question-other-radio span:nth-child(1) {
+  width: 16px;
+}
+
+.multiple-question-other-radio span:nth-child(2) {
+  width: 100%;
+}
+
+.multiple-question-other-input {
+  margin-left: 10px;
+  width: 80%;
+}
+
+.required {
+  color: red;
+}
+
+form .ant-btn-primary {
+  min-width: 90px;
+  position: relative;
+  float: right;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #01bcd4;
+}

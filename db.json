@@ -1,0 +1,58 @@
+{
+  "questionnaires": [
+    {
+      "id": "1",
+      "title": "GoTech Questionnaire",
+      "description": "Show me what you got!",
+      "questions": [
+        {
+          "id": "1",
+          "title": "What language is your favorite?",
+          "choices": [
+            "Javascript",
+            "TypeScript",
+            "CoffeeScript"
+          ],
+          "hasOther": false,
+          "kind": "multipleChoiceKind",
+          "isRequired": true
+        },
+        {
+          "id": "2",
+          "title": "Why do you like TypeScript?",
+          "choices": [
+            "Javascript",
+            "TypeScript",
+            "CoffeeScript"
+          ],
+          "condition": {
+            "questionId": "1",
+            "operator": "=",
+            "value": "TypeScript"
+          },
+          "hasOther": false,
+          "kind": "textKind",
+          "isRequired": true
+        },
+        {
+          "id": "3",
+          "title": "What do you like about programming?",
+          "kind": "textKind",
+          "isRequired": false
+        },
+        {
+          "id": "4",
+          "title": "How was the assignment?",
+          "choices": [
+            "Easy",
+            "Normal",
+            "Hard"
+          ],
+          "hasOther": true,
+          "kind": "multipleChoiceKind",
+          "isRequired": true
+        }
+      ]
+    }
+  ]
+}
